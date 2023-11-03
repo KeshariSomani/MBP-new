@@ -1,0 +1,132 @@
+<%-include('partials/header')%>
+<style>
+    body{
+        font-family: 'Roboto';
+    }
+ 
+</style>
+<body>
+ 
+   
+    <!--form -->
+
+    <div class="mt-8 md:text-left flex justify-center  lg:mt-4 sm:mt-0 ">
+        <div class="h-auto w-full space-y-5 lg:mx-12   pt-4 mx-4 rounded-lg shadow px-4 bg-[#F2F2F2]" >
+            <form class="space-y-6 bg-gray-100"  method="post">
+                <div class="text-xl font-semibold font-poppins font-bold text-gray-900 pt-3">
+                    Please fill in below form fields and send us your Enquiry.
+                </div>
+                <div>
+                  <label for="name" class="block mb-2 -mt-2 text-lg text-black bold"
+                    >Name*</label
+                  >
+                  <input
+                    type="name"
+                    name="name"
+                    class="bg-gray-300 text-black text-sm rounded-full block w-full p-2.5"
+                    required
+                  />
+                </div>
+          
+                <div>
+                  <label for="email" class="block mb-2 text-lg text-black bold"
+                    >Email*</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    class="bg-gray-300 text-black text-sm rounded-full block w-full p-2.5"
+                    required
+                  />
+                </div>
+          
+                <div>
+                  <label for="email" class="block mb-2 text-lg text-black bold"
+                    >Phone Number*</label
+                  >
+          
+                  <div class="flex gap-3">
+                    <div
+                      class="place bg-gray-300 text-black text-sm rounded-full block lg:w-[60px] p-1 flex"
+                    >
+                      <select
+                        class="flex-1 mr-1 bg-transparent focus:outline-none"
+                        name="countrycode"
+                      >
+                        <option value="+91">+91</option>
+                        <option value="+31">+31</option>
+                        <option value="+02">+02</option>
+                        <option value="+15">+15</option>
+                      </select>
+                    </div>
+          
+                    <div class="col-span-10 w-full">
+                      <input
+                        type="tel"
+                        name="phone"
+                        class="bg-gray-300 text-black text-sm rounded-full block w-full p-2.5"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div>
+                    <label for="loctaion" class="block mb-2 text-lg text-black bold"
+                      >Location*</label
+                    >
+                    <input
+                      type="text"
+                      name="from"
+                      class="bg-gray-300 text-black text-sm rounded-full block w-full p-2.5"
+                      required
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <label for="loctaion" class="block mb-2 text-lg text-black bold"
+                      >Company Name*</label
+                    >
+                    <input
+                      type="text"
+                      name="from"
+                      class="bg-gray-300 text-black text-sm rounded-full block w-full p-2.5"
+                      required
+                      value=""
+                    />
+                  </div>
+                <div>
+                  <label for="loctaion" class="block mb-2 text-lg text-black bold"
+                    >Skype ID/Whats App Number/IMO Number*</label
+                  >
+                  <input
+                    type="tel"
+                    name="address"
+                    class="bg-gray-300 text-black text-sm rounded-full block w-full p-2.5"
+                    required
+                  />
+                </div>
+             
+                <div>
+                  <label for="loctaion" class="block mb-2 text-lg text-black bold">Brief Description About Your Company*</label>
+                  <textarea name="" id="" cols="30" rows="10"   class="bg-gray-300 text-black text-sm rounded-lg block w-full p-2.5"></textarea>
+               
+                </div>
+          
+                <div>
+                  <button
+                    class="bg-[#2E2E2E] text-white font-bold text-xl mt-8  py-2 px-10 rounded-full"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <br />
+              </form>
+        </div>
+      </div>
+
+    <!--form sec end-->
+   
+
+</body>
+<%-include('partials/footer')%>

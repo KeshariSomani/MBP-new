@@ -1,0 +1,249 @@
+<%-include('partials/header')%>
+<style>
+    body{
+        font-family: 'Poppins';
+    }
+    .main{
+      background-color:#EFF7F9;
+    }
+    .blueshadow{
+        box-shadow: -5px 5px 0px 3px #3982AA;
+    }
+    .grayshadow{
+        box-shadow: -5px 5px 0px 3px #2E2E2E;
+    }
+    
+.accordion__header {
+	padding: 1em;
+
+	margin-top: 2px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+.accordion__header > * {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+}
+.accordion__header.is-active {
+
+	color: black;
+}
+
+.accordion__toggle {
+	margin-left: 10px;
+	height: 3px;
+	background-color: #222;
+	width: 13px;
+	display: block;
+	position: relative;
+	flex-shrink: 1;
+	border-radius: 2px;
+}
+
+.accordion__toggle::before {
+	content: "";
+	width: 3px;
+	height: 13px;
+	display: block;
+	background-color: #222;
+	position: absolute;
+	top: -5px;
+	left: 5px;
+	border-radius: 2px;
+}
+.is-active{
+    border: none;
+}
+
+.is-active .accordion__toggle {
+	background-color: black;
+}
+.is-active .accordion__toggle::before {
+	display: none;
+}
+
+
+.accordion__body {
+	display: none;
+	padding: 1em;
+	border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+	border-top: 0;
+}
+.accordion__body.is-active {
+	display: block;
+}
+</style>
+<body>
+     <!-- HERO MAIN SECTION  -->
+     <div class="md:flex flex-row justify-between items-center md:pl-5 h-full w-full main">
+        
+        <div class="text-center space-y-5 p-2 md:text-left lg:w-2/3 lg:ml-12 ">
+          <p class="font-bold text-[#2E2E2E] text-3xl md:font-extrabold md:text-4xl lg:text-6xl">
+             Planning
+          </p>
+          <p class="font-bold text-xl justify-between items-center  h-full w-full">
+            Planning is the stage where most of the entrepreneur start as it is simple but in real marketplace this is wrong and need to be change if they want to be successful entrepreneurs.
+          </p>
+        </div>
+        <div>
+            <img src="images/planningMain.svg" alt="PrePlanning hero section image"
+          class="h-full w-[90%] mx-auto md:mx-0 md:h-96 md:w-96 lg:pr-8 lg:h-[30rem] lg:w-[30rem]"
+        />
+        </div>
+      </div>
+       <!--MAIN SECTION END-->
+
+<!---SECOND SECTION START--->
+       <div class="md:flex flex-row lg:justify-between  md:pl-5">
+     <!--left section-->
+     <div class="w-full">
+        <p class=" md:text-lg md:w-2/3 lg:w-[90%] lg:text-lg mt-16 mx-4 lg:ml-12  text-justify">
+
+            Once you are energised and fired up with the passion for your idea, its vital that you develop a plan to ensure a success and to guide your business. Once the research done earlier solidifies and supports your business idea, it is a time to put your plan in writing. This step includes what your business is all about, how the marketing work can be done and what the employment structure you are planning to employ. It includes target market and competition you discovered as well as it defines the goals and sales projections.
+            <br/><br />
+            Starting a business is a stressful endeavour full of positive as well as negatives surprises. Planning helps to anticipate with strategic adjustments already thought out to deal with unforeseen events. Planning allows entrepreneurs to determine the best way to allocate the resources in scarcity, and how to shore the limitations or weaknesses. Planning ensures that entrepreneurs get a clearer picture of the competitive world they are about to enter. Planning phase helps entrepreneurs to differentiate their company in the minds of potential customers, and how the company will efficiently compete in the market place. The planning crystallises the marketing themes which will be emphasised to get the customers attention and achieve sales.
+            <br/><br /> 
+            From the outset of the start-ups will have significant competitive advantages compared with established players in its ideal market place. Undoubtedly company will have certain disadvantages as it is a start-up and the all other companies have customers and may be well established players in the market. To be the best business, business planning is an important phase and entrepreneurs see it as continuous activity setting the long term and short-term goals and objectives. Short-term and long-term, both are important and it requires regular monitoring to determine if the goals and objectives are being met.
+<br/><br />
+         
+    
+        </p>
+
+     
+ 
+    </div>
+
+  <!--right section-->
+
+  
+
+        <div class="w-full mt-8 md:text-left lg:max-w-lg  lg:mx-12 lg:mt-0 md:mt-0 sm:mt-0">
+          <div class="h-auto  lg:mx-12  pt-4 mx-4  px-4">
+           
+            <form class="flex h-12 w-full justify-between items-center bg-slate-200 rounded-full  my-10"   method=""   action="">
+                <img src="images/P_searchGray.svg" alt="search img" class="h-5 ml-[10px] " />
+                <input type="text" placeholder="Search Products " name="" class="bg-transparent w-[100%] mr-[12px] focus:outline-none mx-5 text-sm" required />
+                <p class="text-black text-xl mr-5"><button type="submit">&rarr;</button></p>
+             </form>
+             
+             <div class="h-auto w-full rounded-lg border border-[#3982AA] bg-[#E3F5FF] blueshadow">
+
+               <p class="text-2xl font-bold mt-4 pl-4">Services</p>
+
+                <div class="container">
+                  <div class="accordion">
+                    <div class="accordion__header   mx-4 border-2 border-black border-t-0 border-x-0">
+                        <h2 class="text-md font-bold">Pre Planning</h2>
+                        <span class="accordion__toggle"></span>
+                    </div>
+                    <div class="accordion__body  text-[#2E2E2E] mx-4">
+                      <a href="PreMROAR.html"><p class="hover:text-sky-500">Market Research & Opportunity Analysis Report (MROAR)</p> </a>
+                      <a href="PreProjectProfile.html"><p class="mt-2 hover:text-sky-500">Project Profile (PP)</p></a> 
+                      <a href="PreBFSR.html"><p class="mt-2 hover:text-sky-500">Business Feasibility Study Report (BFSR)</p> </a>  
+                    </div>
+                    <div class="accordion__header is-active  mx-4 border-2 border-black border-t-0 border-x-0">
+                        <h2 class="text-md font-bold">Planning</h2>
+                        <span class="accordion__toggle"></span>
+                    </div>
+                    <div class="accordion__body is-active mx-4">
+                      <a href="planBusinessModel.html"><p class="hover:text-sky-500">Business Modelling (BM) </p> </a>
+                      <a href="planBusinessPlan.html"><p class="mt-2 hover:text-sky-500">Business Plan (BP)</p></a> 
+                      <a href="planDPR.html"><p class="mt-2 hover:text-sky-500">Detailed Project Report</p> </a> 
+                      <a href="planVisa.html"><p class="mt-2 hover:text-sky-500">Visa Business Plan </p> </a>
+                      <a href="planFranchise.html"><p class="mt-2 hover:text-sky-500">Franchise Business Plan</p></a> 
+                      <a href="planNPB.html"><p class="mt-2 hover:text-sky-500">Non-Profit Business Plan</p> </a> 
+                    </div>
+                    <div class="accordion__header  mx-4 border-2 border-black border-t-0 border-x-0">
+                        <h2 class="text-md font-bold">Post Planning</h2>
+                        <span class="accordion__toggle"></span>
+                    </div>
+                    <div class="accordion__body mx-4">
+                      <a href="postSales.html"><p class=" hover:text-sky-500">Sales & Marketing</p> </a> 
+                      <a href="postDept.html"><p class="mt-2 hover:text-sky-500">Departmental Business Plan </p> </a>
+                      <a href="postInvestment.html"><p class="mt-2 hover:text-sky-500">Investment Pitch</p></a> 
+                   
+                    </div>
+                   
+                </div> 
+                  </div>  <!--accodion div close-->
+
+
+                 <p class="text-lg mt-4 font-bold mt-4 pl-4 text-[#2E2E2E]">Need a custom report? Tell us more</p>
+
+             
+                 <a href="contactUs.html">  <button class="text-white text-lg font-semibold bg-[#2E2E2E] rounded-full mt-4 mb-4 px-8 mx-4 py-2">Contact Us</button> </a>  
+                            
+
+             </div>
+
+             <p class="text-2xl mt-8 font-bold mt-4">Latest Blogs</p>
+
+             <div class="h-32 w-full mt-8  rounded-lg bg-[#EDECFF] border border-[#3982AA] grayshadow">
+                
+               <p class="text-2xl font-bold mt-2 pl-4">Test</p>
+               <div class="flex text-center mt-12 pl-4">
+                <img src="images/clock.svg" alt="">
+                <p class="text-md align-bottom flex items-end ">31 Oct 2023</p>
+               </div>
+              
+             </div>
+
+             <div class="h-auto  w-full mt-8  rounded-lg bg-[#EDECFF] border border-[#3982AA] grayshadow">
+                
+                <p class="text-md font-bold mt-8  mb-2 pl-4">INDONESIA – Business Opportunities and Market Analysis</p>
+                <div class="flex text-center lg:mt-4 pl-4">
+                 <img src="images/clock.svg" alt="">
+                 <p class="text-md align-bottom flex items-end ">31 Oct 2023</p>
+                </div>
+               
+              </div>
+
+              <div class="h-auto w-full mt-8  rounded-lg bg-[#EDECFF] border border-[#3982AA] grayshadow">
+                
+                <p class="text-md font-bold mt-2 pl-4">NEW JERSEY Business Investment Opportunities</p>
+                <div class="flex text-center mt-12  mb-2 pl-4">
+                 <img src="images/clock.svg" alt="">
+                 <p class="text-md align-bottom flex items-end ">31 Oct 2023</p>
+                </div>
+               
+              </div>
+              
+              <div class="h-auto  w-full mt-8  rounded-lg bg-[#EDECFF] border border-[#3982AA] grayshadow">
+                
+                <p class="text-md font-bold mt-4 pl-4">NEW YORK Startup Business Investment Opportunities | Research based Business Ideas</p>
+                <div class="flex text-center  mb-2 mt-12 pl-4">
+                 <img src="images/clock.svg" alt="">
+                 <p class="text-md align-bottom flex items-end ">31 Oct 2023</p>
+                </div>
+               
+              </div>
+             
+          </div>
+        </div>
+ </div>
+      <!--second section end-->
+
+   
+   
+</body>
+<script>
+
+    // Accordion 
+    
+ 
+    $('.accordion__header').click(function(e) {
+      e.preventDefault();
+      var currentIsActive = $(this).hasClass('is-active');
+      $(this).parent('.accordion').find('> *').removeClass('is-active');
+      if(currentIsActive != 1) {
+        $(this).addClass('is-active');
+        $(this).next('.accordion__body').addClass('is-active');
+      }
+    });
+</script>
+<%-include('partials/footer')%>

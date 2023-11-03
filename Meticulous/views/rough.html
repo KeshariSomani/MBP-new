@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Drop-down Menu Bar</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/*  
+  .show + a, ul{
+    display:none;
+  }
+ 
+  */
+  
+   ul ul{
+    top:70px;
+    border-top:0px;
+    float:none;
+    position:static;
+    display:none;
+    opacity:1;
+    visibility:visible;
+  } 
+  
+  [id^=btn]:checked + ul{
+    display:block;
+  }
+  
+  
+  span.cancel:before{
+    content:'\f00d';
+  }
+      
+      
+  </style>
+  <body>
+      <nav class=""> 
+        <input type="checkbox" id="btn" class="hidden" > 
+        <ul>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">About Us</a></li>
+          <li>
+            <label for="btn-1" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex justify-between" onclick="changesign(1)">
+                <p>Services</p>
+                <span class="text-xl font-bold" id="sign1" >+</span>
+            </div></label>
+            <!-- <a href="#">Features</a> -->
+            <input type="checkbox" id="btn-1" class="hidden">
+            <ul class="bg-gray-100">
+                <li>
+                    <label for="btn-6" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between" onclick="changesign(2)">
+                        <p>Pre Planned</p>
+                        <span class="text-xl font-bold" id="sign2" >+</span>
+                    </div></label>
+                    <!-- <a href="#">More <span class="fa fa-plus"></span></a> -->
+                    <input type="checkbox" id="btn-6" class="hidden"> 
+                    <ul>
+                      <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Market Research & Opportunity Analysis Report (MROAR)</a></li>
+                      <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Project profile (PP)</a></li>
+                      <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Business Feasibility Study Report (BFSR)</a></li>
+                    </ul>
+                  </li> 
+                  <li>
+                    <label for="btn-4" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between" onclick="changesign(3)">
+                        <p>Planned</p>
+                        <span class="text-xl font-bold" id="sign3" >+</span>
+                    </div></label>
+                    <!-- <a href="#">More <span class="fa fa-plus"></span></a> -->
+                    <input type="checkbox" id="btn-4" class="hidden"> 
+                    <ul>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Business Modelling (BM)</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Business Plan (BP)</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Detailed Project Report</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Visa Business Plan</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Franchise Business Plan</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Non-Profit Business Plan</a></li>
+                        
+                    </ul>
+                  </li> 
+                  <li>
+                    <label for="btn-5" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between"onclick="changesign(4)">
+                        <p>Post Planned</p>
+                        <span class="text-xl font-bold" id="sign4" >+</span>
+                    </div></label>
+                    <!-- <a href="#">More <span class="fa fa-plus"></span></a> -->
+                    <input type="checkbox" id="btn-5" class="hidden"> 
+                    <ul>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Sales & Marketing</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Departmental Business Plan</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Investment Pitch</a></li>
+                    </ul>
+                  </li> 
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">
+                <div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between" onclick="changesign(5)">
+                    <p>Industry</p>
+                    <span class="text-xl font-bold" id="sign5" >+</span>
+                </div>
+            </label>
+            <!-- <a href="#">Services</a> -->
+            <input type="checkbox" id="btn-2" class="hidden">
+            <ul class="bg-gray-100">
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Automotive & Transport</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Finance Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Health Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Food Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Agriculture Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Energy & Clean Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Real Estate</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Education Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Hospitality</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Fashion & Retail</a></li>
+            </ul> 
+          </li>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">Blogs</a></li>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">Opportunities</a></li>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="content"></div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script>
+      function changesign(num)
+      {
+        if(document.getElementById(`sign${num}`).innerHTML=='+')
+        {
+            document.getElementById(`sign${num}`).innerHTML='-'
+        }
+        else
+        {
+            document.getElementById(`sign${num}`).innerHTML='+'
+        }
+      }
+  </script>
+  </body>
+</html>
+
+

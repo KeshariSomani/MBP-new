@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meticulous</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<style>
+    .font-poppins{
+        font-family: 'Poppins', sans-serif;
+    }
+    .navlist ul li:hover > ul{
+        display: block;
+    }
+    ul ul{
+    float:none;
+    position:static;
+    display:none;
+    opacity:1;
+    visibility:visible;
+  } 
+  
+  [id^=btn]:checked + ul{
+    display:block;
+  }
+  
+  
+  span.cancel:before{
+    content:'\f00d';
+  }
+   
+    
+</style>
+<body>
+    <header>
+        <nav class="bg-[#EFF7F9] p-2"> 
+        <div class="flex flex-row items-center justify-between px-10 relative">
+            <div>
+               <img src="../public/images/mbplogo.png" class="h-16 w-16">
+            </div>
+            <div class="navlist lg:flex hidden space-x-5">
+                <ul class="flex space-x-10 font-poppins">
+                    <li class="cursor-pointer hover:text-blue-400">About Us</li>
+                    <li class="relative cursor-pointer "><p class="hover:text-blue-400">Services</p>
+                        
+                        <ul class="absolute -left-5  w-44 hidden bg-white  shadow-xl">
+                            <div class="bg-blue-400 h-1 p-0.5"></div>
+                            <li class="relative"><div class="p-2 flex justify-between"><p>Pre Planning</p><p>></p></div>
+                                <ul class="absolute -right-56 w-56 -top-1 hidden bg-white text-center">
+                                    <div class="bg-blue-400 h-1 p-0.5"></div>
+                                    <li><a class="text-xs p-2">Market Research & Opportunity Analysis Report (MROAR)</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Project profile (PP)</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Business Feasibility Study Report (BFSR)</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                </ul>
+                            </li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="relative"><div class="p-2 flex justify-between"><p>Planning</p><p>></p></div>
+                                <ul class="absolute -right-56 w-56 -top-1 hidden bg-white text-center">
+                                    <div class="bg-blue-400 h-1 p-0.5"></div>
+                                    <li><a class="text-xs p-2">Business Modelling (BM)</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Business Plan (BP)</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Detailed Project Report</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Visa Business Plan</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Franchise Business Plan</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Non-Profit Business Plan</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+
+                                </ul>
+                            </li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="relative"><div class="p-2 flex justify-between"><p>Post Planning</p><p>></p></div>
+                                <ul class="absolute -right-56 w-56 -top-1 hidden bg-white text-center">
+                                    <div class="bg-blue-400 h-1 p-0.5"></div>
+                                    <li><a class="text-xs p-2">Sales & Marketing</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Departmental Business Plan</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                    <li><a class="text-xs p-2">Investment Pitch</a></li>
+                                    <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                                </ul>
+                            </li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                        </ul>
+                    </li>
+                    <li class="cursor-pointer  relative"><p class="hover:text-blue-400">Industry</p>
+                        <ul class="absolute -left-5  w-56 hidden bg-white  shadow-xl text-sm">
+                            <div class="bg-blue-400 h-1 p-0.5"></div>
+                            <li class="p-2"><a class="p-1">Automotive & Transport</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Food Technology</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"v><a class="p-1">Agriculture Technology</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Energy & Clean Technology</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Real Estate</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Consumer Goods & Services</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Education Technology</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Entertainment</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Hospitality</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+                            <li class="p-2"><a class="p-1">Fashion & Retail</a></li>
+                            <div class="h-[1px] p-[0.5px] bg-gray-500"></div>
+
+                        </ul>
+                    </li>
+                    <li class="cursor-pointer hover:text-blue-400">Blogs</li>
+                    <li class="cursor-pointer hover:text-blue-400">Opportunities</li>
+                    <li class="cursor-pointer hover:text-blue-400">Contact Us</li>
+                </ul>
+                <div>
+                    <img src="../public/images/cart.svg">
+                </div>
+                <div>
+                    <img src="../public/images/search.svg">
+                </div>
+            </div>
+            
+            <div class="flex flex-col space-y-2 absolute right-3 lg:hidden" id="menubar">
+                <div class="bg-gray-800 h-[1px] p-[1px] w-8"></div>
+                <div class="bg-gray-800 h-[1px] p-[1px] w-8"></div>
+                <div class="bg-gray-800 h-[1px] p-[1px] w-8"></div>
+            </div>
+            <div class="absolute right-3 lg:hidden">
+                <p class="text-3xl hidden" id="closebutton">X</p>
+            </div>
+        </div>
+    </nav>
+
+    <!--Mob navbar-->
+    <nav class="hidden" id="mobnav"> 
+        <input type="checkbox" id="btn" class="hidden" > 
+        <ul>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">About Us</a></li>
+          <li>
+            <label for="btn-1" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex justify-between" onclick="changesign(1)">
+                <p>Services</p>
+                <span class="text-xl font-bold" id="sign1" >+</span>
+            </div></label>
+            <!-- <a href="#">Features</a> -->
+            <input type="checkbox" id="btn-1" class="hidden">
+            <ul class="bg-gray-100">
+                <li>
+                    <label for="btn-6" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between" onclick="changesign(2)">
+                        <p>Pre Planned</p>
+                        <span class="text-xl font-bold" id="sign2" >+</span>
+                    </div></label>
+                    <!-- <a href="#">More <span class="fa fa-plus"></span></a> -->
+                    <input type="checkbox" id="btn-6" class="hidden"> 
+                    <ul>
+                      <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Market Research & Opportunity Analysis Report (MROAR)</a></li>
+                      <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Project profile (PP)</a></li>
+                      <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Business Feasibility Study Report (BFSR)</a></li>
+                    </ul>
+                  </li> 
+                  <li>
+                    <label for="btn-4" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between" onclick="changesign(3)">
+                        <p>Planned</p>
+                        <span class="text-xl font-bold" id="sign3" >+</span>
+                    </div></label>
+                    <!-- <a href="#">More <span class="fa fa-plus"></span></a> -->
+                    <input type="checkbox" id="btn-4" class="hidden"> 
+                    <ul>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Business Modelling (BM)</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Business Plan (BP)</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Detailed Project Report</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Visa Business Plan</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Franchise Business Plan</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Non-Profit Business Plan</a></li>
+                        
+                    </ul>
+                  </li> 
+                  <li>
+                    <label for="btn-5" class="show"><div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between"onclick="changesign(4)">
+                        <p>Post Planned</p>
+                        <span class="text-xl font-bold" id="sign4" >+</span>
+                    </div></label>
+                    <!-- <a href="#">More <span class="fa fa-plus"></span></a> -->
+                    <input type="checkbox" id="btn-5" class="hidden"> 
+                    <ul>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Sales & Marketing</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Departmental Business Plan</a></li>
+                        <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Investment Pitch</a></li>
+                    </ul>
+                  </li> 
+            </ul>
+          </li>
+          <li>
+            <label for="btn-2" class="show">
+                <div class="px-5 py-2 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400 flex flex-row justify-between" onclick="changesign(5)">
+                    <p>Industry</p>
+                    <span class="text-xl font-bold" id="sign5" >+</span>
+                </div>
+            </label>
+            <!-- <a href="#">Services</a> -->
+            <input type="checkbox" id="btn-2" class="hidden">
+            <ul class="bg-gray-100">
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Automotive & Transport</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Finance Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Health Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Food Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Agriculture Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Energy & Clean Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Real Estate</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Education Technology</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Hospitality</a></li>
+                <li class="text-sm py-2 px-5 border-[1px] border-gray-200"><a  href="#">Fashion & Retail</a></li>
+            </ul> 
+          </li>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">Blogs</a></li>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">Opportunities</a></li>
+          <li class="py-2 px-5 border-[1px] border-gray-200 hover:text-blue-400 hover:border-blue-400"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+<script src="../assets/header.js">
+
+</script> 

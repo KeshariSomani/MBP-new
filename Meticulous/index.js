@@ -1,0 +1,200 @@
+require('dotenv').config()
+const express= require('express')
+const app = express();
+const port = process.env.PORT
+app.set('view engine','ejs')
+app.set('views','./views')
+
+
+app.get('/',(req,res)=>
+{
+    res.render('home')
+})
+
+app.get('/about',(req,res)=>
+{
+    res.render('about')
+})
+
+app.get('/preplanning',(req,res)=>
+{
+    res.render('preplanning')
+})
+app.get('/preplanning',(req,res)=>
+{
+    res.render('preplanning')
+})
+app.get('/preMROAR',(req,res)=>
+{
+    res.render('preMROAR')
+})
+app.get('/preMROARform',(req,res)=>
+{
+    res.render('preMROARform')
+})
+app.get('/preProjectProfile',(req,res)=>
+{
+    res.render('preProjectProfile')
+})
+app.get('/preEnquiryform',(req,res)=>
+{
+    res.render('preEnquiryform')
+})
+app.get('/preBFSR',(req,res)=>
+{
+    res.render('preBFSR')
+})
+app.get('/planning',(req,res)=>
+{
+    res.render('planning')
+})
+app.get('/planBusinessModel',(req,res)=>
+{
+    res.render('planBusinessModel')
+})
+app.get('/planBusinessPlan',(req,res)=>
+{
+    res.render('planBusinessPlan')
+})
+app.get('/planDPR',(req,res)=>
+{
+    res.render('planDPR')
+})
+app.get('/planVisa',(req,res)=>
+{
+    res.render('planVisa')
+})
+
+app.get('/planFranchise',(req,res)=>
+{
+    res.render('planFranchise')
+})
+app.get('/planNonProfit',(req,res)=>
+{
+    res.render('planNonProfit')
+})
+
+app.get('/postPlanning',(req,res)=>
+{
+    res.render('postPlanning')
+})
+app.get('/postSales',(req,res)=>
+{
+    res.render('postSales')
+})
+app.get('/postDepartment',(req,res)=>
+{
+    res.render('postDepartment')
+})
+app.get('/postInvestement',(req,res)=>
+{
+    res.render('postInvestement')
+})
+app.get('/industry',(req,res)=>
+{
+    res.render('industry')
+})
+app.get('/industryAnother',(req,res)=>
+{
+    res.render('industryAnother')
+})
+app.get('/indEnqForm',(req,res)=>
+{
+    res.render('indEnqForm')
+})
+app.get('/indDownloadTOC',(req,res)=>
+{
+    res.render('indDownloadTOC')
+})
+app.get('/indA&T',(req,res)=>
+{
+    res.render('indA&T')
+})
+app.get('/indFinancial',(req,res)=>
+{
+    res.render('indFinancial')
+})
+app.get('/indHealth',(req,res)=>
+{
+    res.render('indHealth')
+})
+app.get('/indFood',(req,res)=>
+{
+    res.render('indFood')
+})
+app.get('/indAgriculture',(req,res)=>
+{
+    res.render('indAgriculture')
+})
+app.get('/indEnergy',(req,res)=>
+{
+    res.render('indEnergy')
+})
+app.get('/indConsumer',(req,res)=>
+{
+    res.render('indConsumer')
+})
+app.get('/indRealEstate',(req,res)=>
+{
+    res.render('indRealEstate')
+})
+app.get('/indEducational',(req,res)=>
+{
+    res.render('indEducational')
+})
+app.get('/indHospitailty',(req,res)=>
+{
+    res.render('indHospitailty')
+})
+app.get('/indFashion',(req,res)=>
+{
+    res.render('indFashion')
+})
+app.get('/blog',(req,res)=>
+{
+    res.render('blog')
+})
+app.get('/blogIndonesia',(req,res)=>
+{
+    res.render('blogIndonesia')
+})
+app.get('/blogForm',(req,res)=>
+{
+    res.render('blogForm')
+})
+app.get('/EmptyCart',(req,res)=>
+{
+    res.render('EmptyCart')
+})
+app.get('/Cart',(req,res)=>
+{
+    res.render('Cart')
+})
+app.get('/contactUs',(req,res)=>
+{
+    res.render('contactUs')
+})
+app.get('/Disclaimer',(req,res)=>
+{
+    res.render('Disclaimer')
+})
+app.get('/FAQ',(req,res)=>
+{
+    res.render('FAQ')
+})
+app.get('/terms&condition',(req,res)=>
+{
+    res.render('terms&condition')
+})
+app.get('/privacypolicy',(req,res)=>
+{
+    res.render('privacypolicy')
+})
+app.listen(port,()=>
+{
+    console.log(`Server is running at ${port}`)
+})
+
+app.use(express.static('public'))
+app.use("/public/images",express.static('./public/images'));
+app.use('/assets',express.static('assets'));
